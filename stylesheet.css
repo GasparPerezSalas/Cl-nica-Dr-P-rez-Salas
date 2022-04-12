@@ -1,0 +1,798 @@
+:root {
+    --colorprincipal: #b2ad7f;
+    --colorsecundario: #a2b9bc;
+    --blanco: #ffffff;
+    --negro: #212121;
+    --grisclaro: #dfe9f3;
+}
+/* HTML */
+
+/* Generales */
+h2, h3 {
+    text-align: center;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+/* Encabezado */
+#encabezado {
+    background-color: var(--colorsecundario);
+    height: 10vw;
+    width: 100%;
+}
+.logotipo {
+    display: inline;
+    width: 120px;
+    height: 10vw;
+}
+h1 {
+    display: inline;
+    color: var(--blanco);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px 30px 0px 50px;
+}
+.div-encabezado p {
+    display: inline;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--blanco);
+    text-align: left;
+    margin-top: 0px;
+}
+.iconos {
+    display: inline;
+    text-align: right;
+    margin-left: 300px;
+}
+.seleccion {
+    display: inline;
+    list-style-type: none;
+}
+.seleccion a:hover {
+    background-color: #b2ad7f;
+    border-radius: 1px;
+}
+/* BARRA DE NAVEGACION */
+#barra-nav {
+    background-color: #b2ad7f;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+    top: 0px;
+}
+.barranav {
+    display: inline-block;
+}
+.barranav .selector {
+    display: inline;
+    color: #a2b9bc;
+    text-decoration: none;
+    text-align: center;
+    padding: 15px 80px;
+    font-weight: bold;
+}
+.selector:hover {
+    background-color: var(--colorsecundario);
+    border-radius: 3px;
+}
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+/* CUERPO */
+.galeria {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.galeria iframe {
+    margin-bottom: 30px;
+}
+.galeria p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #b2ad7f;
+}
+.subtitulo {
+    font-size: 30px;
+    color: var(--colorsecundario);
+    font-weight: bold;
+    margin-top: 90px;
+}
+/* Pie de Página */
+footer {
+    background-color: #a2b9bc;
+    height: 70px;
+    border-radius: 5px;
+}
+footer p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 20px;
+}
+.formulario {
+    background-color: #b2ad7f;
+    border-radius: 5px;
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+    margin: 40px 300px;
+
+}
+.formulario label {
+    font-weight: bold;
+    margin-right: 20px;
+    text-align: left;
+}
+.formulario button {
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+.serviciochico {
+    text-align: center;
+    margin-top: 50px;
+}
+@media (max-width: 479px) {
+    /* GENERALES */
+    #hero {
+        width: 100%;
+        height: 100vh;
+    }
+    #hero {
+        display: grid;
+        grid-template-areas: 
+        "encabezado"
+        "barranav"
+        "cuerpo"
+        "pie";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+    #encabezado {
+        grid-area: encabezado;
+        width: 100%;
+        height: 35vh;
+    }
+    #barra {
+        grid-area: barranav;
+    }
+    #cuerpo {
+        grid-area: cuerpo;
+    }
+    #piepagina {
+        grid-area: pie;
+    }
+    /*HEADER*/
+    .div-encabezado {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #a2b9bc;
+    }
+    .div-encabezado .logotipo {
+        height: 45%;
+    }
+    .div-encabezado p{
+        margin: 5px 0;
+        font-size: 6vw;
+    }
+    .div-encabezado h1 {
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 8vw;
+    }
+    .iconos {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .iconos li {
+        padding: 5px 20px;
+    }
+    .iconos li a:hover {
+        background-color: #b2ad7f;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+    }
+    /*BARRA NAV*/
+    .barranav {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #b2ad7f;
+        margin: 0;
+        padding: 0 auto;
+    }
+    .barranav .selector {
+        width: 100%;
+        padding: 0 auto;
+    }
+    .barranav .selector a:hover {
+        background-color: #a2b9bc;
+        width: 100%;
+        opacity: 0.5;
+    }
+    /* GALERIA */
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .galeria iframe {
+        margin-top: 20px;
+        border: dotted;
+        border-color: #a2b9bc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    /* SERVICIOS */
+    #cuerpo h2 {
+        margin: 80px;
+    }
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #cuerpo .historia {
+        font-size: 18px;
+        text-indent: 7%;
+        line-height: 200%;
+        margin: 0 50px 90px 50px;
+    }
+    .serviciochico img {
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 160px;
+        border: 10px solid #666;
+    }
+    .serviciochico {
+        padding: 30px;
+        background-color: #DADEE0;
+        border-radius: 10px;
+        width: 80%;
+        margin: 20px
+    }
+    #cuerpo .serviciochico h2 {
+        margin: 5px;
+    }
+    .serviciochico p a {
+        color:#b2ad7f;
+        font-weight: bold;
+    }
+    .serviciochico p a:hover {
+        opacity: 0.5;
+    }
+    /* FORMULARIO */
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        margin: 50px auto 100px auto;
+        width: 80%;
+    }
+    .formulario label {
+        margin-bottom: 5px;
+    }
+    .formulario textarea {
+        width: 80%;
+        border: 3px solid var(--grisclaro);
+    }
+    .formulario input {
+        border: 3px solid var(--grisclaro);
+    }
+    .formulario button {
+    background-color:#b2ad7f;
+    border: solid;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .formulario button:hover {
+        background-color: #a2b9bc;
+        border-radius: 7px;
+        color: #212121;
+        font-size: 16px;
+        opacity: 0.5;
+    }
+
+    /*FOOTER*/
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        background-color: #a2b9bc;
+        border-radius: 5px;
+        width: 100%;
+        height: 35vh;
+    }
+    footer .iconos .seleccion {
+        margin-top: 30px;
+    }
+    footer p {
+        font-size: 16px;
+        padding: 0;
+    }
+    footer a {
+        color: blue;
+    }
+    footer a:hover {
+        opacity: 0.5;
+    }
+}  
+@media (min-width: 480px) and (max-width: 1023px) {
+    /* GENERALES */
+    #hero {
+        width: 100%;
+        height: 100vh;
+    }
+    #hero {
+        display: grid;
+        grid-template-areas: 
+        "barranav"
+        "encabezado"
+        "cuerpo"
+        "pie";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 3fr 1fr;
+    }
+    #encabezado {
+        grid-area: encabezado;
+        width: 100%;
+        height: 35vh;
+    }
+    #barra {
+        grid-area: barranav;
+    }
+    #cuerpo {
+        grid-area: cuerpo;
+    }
+    #piepagina {
+        grid-area: pie;
+    }
+    /*HEADER*/
+    .div-encabezado {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: #a2b9bc;
+    }
+    .div-encabezado .logotipo {
+        height: 45%;
+    }
+    .div-encabezado p{
+        margin: 5px 0;
+        font-size: 26px;
+    }
+    .div-encabezado h1 {
+        margin-top: 10px;
+        font-size: 32px;
+    }
+    .iconos {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .iconos li {
+        padding: 5px 20px;
+    }
+    .iconos li a:hover {
+        background-color: #b2ad7f;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px 5px 10px;
+    }
+    /*BARRA NAV*/
+    .barranav {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #b2ad7f;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-radius: 3px;
+    }
+    .barranav .selector {
+        padding: 15px 10px;
+    }
+    .barranav .selector a {
+        padding: 10px 10px;
+    }
+    .barranav .selector a:hover {
+        background-color: #a2b9bc;
+        width: 100%;
+        opacity: 0.5;
+        padding: 15px;
+    }
+    /* GALERIA */
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .galeria iframe {
+        margin-top: 20px;
+        border: dotted;
+        border-color: #a2b9bc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    /* SERVICIOS */
+    #cuerpo h2 {
+        margin: 80px;
+    }
+
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #cuerpo .historia {
+        font-size: 18px;
+        text-indent: 7%;
+        line-height: 200%;
+        margin: 0 50px 90px 50px;
+    }
+    .serviciochico img {
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 160px;
+        border: 10px solid #666;
+    }
+    .serviciochico {
+        padding: 30px;
+        background-color: #DADEE0;
+        border-radius: 10px;
+        width: 80%;
+        margin: 20px;
+    }
+    #cuerpo .serviciochico h2 {
+        margin: 5px;
+    }
+    .serviciochico p a {
+        color:#b2ad7f;
+        font-weight: bold;
+    }
+    .serviciochico p a:hover {
+        opacity: 0.5;
+    }
+    /* FORMULARIO */
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 50px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .formulario label {
+        margin-bottom: 5px;
+    }
+    .formulario textarea {
+        width: 80%;
+        border: 3px solid var(--grisclaro);
+    }
+    .formulario input {
+        border: 3px solid var(--grisclaro);
+    }
+    .formulario button {
+    background-color:#b2ad7f;
+    border: solid;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .formulario button:hover {
+        background-color: #a2b9bc;
+        border-radius: 7px;
+        color: #212121;
+        font-size: 16px;
+        opacity: 0.5;
+    }
+
+    /*FOOTER*/
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        background-color: #a2b9bc;
+        border-radius: 5px;
+        width: 100%;
+        height: 35vh;
+    }
+    footer .iconos .seleccion {
+        margin-top: 30px;
+    }
+    footer p {
+        font-size: 16px;
+        padding: 0;
+    }
+    footer a {
+        color: blue;
+    }
+    footer a:hover {
+        opacity: 0.5;
+    }
+}
+@media (min-width: 1024px) {
+    #hero {
+        width: 100%;
+        height: 100vh;
+    }
+    #hero {
+        display: grid;
+        grid-template-areas: 
+        "encabezado encabezado encabezado"
+        "barranav cuerpo cuerpo"
+        "pie pie pie";
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-rows: 1fr 3fr 1fr;
+    }
+    #encabezado {
+        grid-area: encabezado;
+        width: 100%;
+        height: 35vh;
+    }
+    #barra {
+        grid-area: barranav;
+    }
+    #cuerpo {
+        grid-area: cuerpo;
+    }
+    #piepagina {
+        grid-area: pie;
+    }
+    /*HEADER*/
+    .div-encabezado {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 35vh;
+        background-color: #a2b9bc;
+    }
+    .div-encabezado .logotipo {
+        height: 35vh;
+        width: 20%;
+        border-radius: 5px;
+    }
+    .div-encabezado p{
+        margin: 15px 0 0 0;
+        font-size: 26px;
+    }
+    .div-encabezado h1 {
+        margin: 0;
+        font-size: 40px;
+    }
+    .iconos {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items:flex-end;
+        margin: 15px 25px 0 0;
+        padding: 0;
+    }
+    .iconos li {
+        padding: 5px 2px;
+    }
+    .iconos li a:hover {
+        background-color: #b2ad7f;
+        opacity: 0.5;
+        width: 100%;
+        height: 100%;
+        padding: 10px 10px;
+    }
+    /*BARRA NAV*/
+    #barra {
+        height: 100%;
+        background-color: #b2ad7f;
+    }
+    .barranav {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #b2ad7f;
+        margin: 0;
+        padding: 0;
+        border-radius: 3px;
+        position: sticky;
+        top: 0px;
+    }
+    .barranav .selector {
+        padding: 30px 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .barranav .selector a:hover {
+        background-color: #a2b9bc;
+        width: 100%;
+        opacity: 0.5;
+        padding: 10px;
+    }
+    /* GALERIA */
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    .galeria iframe {
+        margin-top: 20px;
+        border: dotted;
+        border-color: #a2b9bc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    /* SERVICIOS */
+    #cuerpo h2 {
+        margin: 80px;
+    }
+    #cuerpo .historia {
+        font-size: 18px;
+        text-indent: 7%;
+        line-height: 200%;
+        margin: 0 50px 90px 50px;
+    }
+    .servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .serviciochico {
+        padding: 30px;
+        background-color: #DADEE0;
+        border-radius: 10px;
+        width: 80%;
+        margin: 20px;
+    }
+    .serviciochico img {
+        margin-top: 30px;
+        width: 200px;
+        height: 200px;
+        border-radius: 160px;
+        border: 10px solid #666;
+    }
+    #cuerpo .serviciochico h2 {
+        margin: 5px;
+    }
+    .serviciochico p a {
+        color:#b2ad7f;
+        font-weight: bold;
+    }
+    .serviciochico p a:hover {
+        opacity: 0.5;
+    }
+    /* FORMULARIO */
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 50px 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .formulario label {
+        margin-bottom: 5px;
+    }
+    .formulario textarea {
+        width: 80%;
+        border: 3px solid var(--grisclaro);
+    }
+    .formulario input {
+        border: 3px solid var(--grisclaro);
+    }
+    .formulario button {
+    background-color:#b2ad7f;
+    border: solid;
+    border-radius: 7px;
+    border-color: white;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .formulario button:hover {
+        background-color: #a2b9bc;
+        border-radius: 7px;
+        color: #212121;
+        font-size: 16px;
+        opacity: 0.5;
+    }
+
+    /*FOOTER*/
+    #piepagina {
+        background-color: #a2b9bc;
+        height: 100%;
+    }
+    footer {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0;
+        background-color: #a2b9bc;
+        border-radius: 5px;
+        width: 100%;
+        height: 35vh;
+    }
+    footer .iconos .seleccion {
+        margin-top: 30px;
+        padding: 0 30px;
+    }
+    footer p {
+        font-size: 16px;
+        padding: 0;
+    }
+    footer a {
+        color: blue;
+    }
+    footer a:hover {
+        opacity: 0.5;
+    }
+}
