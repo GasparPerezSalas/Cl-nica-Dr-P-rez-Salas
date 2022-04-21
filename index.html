@@ -1,205 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home - Clínica Dr. Pérez Salas</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="preload" href="normalize.css" as="style">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-        <link rel="preload" href="stylesheet.css" as="style">
-        <link rel="stylesheet" href="stylesheet.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - C & C Turf</title>
+    <link rel="stylesheet" href="bootstrap_local/css/bootstrap.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="preload" href="stylesheet.css" as="style">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="w-100 px-3 py-1 bg-dark">
+        <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 bg-dark text-white text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                    <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                </svg>
+                ENVIO GRATIS A TODO EL PAÍS
+              </div>
+              <div class="col-12 col-md-6 bg-dark text-white text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart2" viewBox="0 0 16 16">
+                    <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l1.25 5h8.22l1.25-5H3.14zM5 13a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                </svg>
+                10% TRANSFERENCIA BANCARIA
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- FIN HEADER -->
+    <!-- BARRA NAV -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4">
+        <div class="container-fluid">
+            <img src="imagenes/logo-cycturf.jpeg" alt="logo" style="border: 3px solid grey; border-radius: 160px; width: 10%; height: 10%;">
+          <a class="navbar-brand ms-3" href="#">C & C Turf</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quiénes somos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Diseños
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Galería</a></li>
+                  <li><a class="dropdown-item" href="#">Creá tu diseño</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Diseños personalizados</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!-- FIN BARRA NAV -->
+    <!-- CARRUSEL -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/04/30/15882683340455.jpg" class="d-block w-100 img-fluid" alt="jockey1">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.infobae.com/new-resizer/mKUAvZSWOMddUZrKfQrFiT_Wrgk=/768x512/filters:format(webp):quality(85)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/CYD46GIQ5FHNTD57ZWEP35Q2GI.jpg" class="d-block w-100 img-fluid" alt="jockey2">
+          </div>
+          <div class="carousel-item">
+            <img src="https://zonadeazar.com/wp-content/uploads/2020/12/san-isidro.jpg" class="d-block w-100 img-fluid" alt="jockey3">
+          </div>
+        </div>
+    </div>
+    <!-- FIN CARRUSEL -->
+    <!-- EMPRESA LIDER -->
+    <div class="container-fluid mt-4 p-3 carta empresa">
+        <div class="row empresa-lider">
+            <div class="col-12 col-md-6 col-lg-4 text-center mt-5 empresa-lider-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-bookmark-star-fill rounded h-50" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 15.5V2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5zM8.16 4.1a.178.178 0 0 0-.32 0l-.634 1.285a.178.178 0 0 1-.134.098l-1.42.206a.178.178 0 0 0-.098.303L6.58 6.993c.042.041.061.1.051.158L6.39 8.565a.178.178 0 0 0 .258.187l1.27-.668a.178.178 0 0 1 .165 0l1.27.668a.178.178 0 0 0 .257-.187L9.368 7.15a.178.178 0 0 1 .05-.158l1.028-1.001a.178.178 0 0 0-.098-.303l-1.42-.206a.178.178 0 0 1-.134-.098L8.16 4.1z"/>
+                </svg>
+            </div>
+            <div class="col-12 col-md-12 col-lg-8 text-center mt-5 mb-5 empresa-lider-texto fs-3">
+                <h4>
+                    Somos la empresa lider del Norte Argentino en diseño y fabricación en el area textil de Turf.
+                    En C y C Turf comercializamos uniformes para jockeys desde hace 10 años.
+                    Nos enorgullece contar con clientes en todo el país, tanto consumidores finales como casas de deporte y comercios minoristas.
+                    Contamos con la más amplia variedad de modelos y stock permanente de artículos para éste deporte.
+                    Desde el inicio, somos fabricantes de accesorios e indumentaria para muchos stud de nuestra ciudad y alrededores.
+                </h4>
+            </div>
+        </div>
+    </div>
+    <!-- FIN EMPRESA LIDER -->
+    <hr>
+    <!-- CARDS -->
+    <div class="container-fluid destacado">
+        <div class="row row-cols-md-2 g-5 cartitas">
+          <div class="col-12 col-md-6">
+            <div class="p-3 border bg-dark">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+                        </svg>
+                      <h5 class="card-title">Diseño</h5>
+                      <p class="card-text">Nuestra producción se adapta a la necesidad de cada cliente, realizando trabajos específicos sin restricción de cantidad, amoldando las técnicas a la demanda planteada.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-3 border bg-dark">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-badge-3d" viewBox="0 0 16 16">
+                            <path d="M4.52 8.368h.664c.646 0 1.055.378 1.06.9.008.537-.427.919-1.086.919-.598-.004-1.037-.325-1.068-.756H3c.03.914.791 1.688 2.153 1.688 1.24 0 2.285-.66 2.272-1.798-.013-.953-.747-1.38-1.292-1.432v-.062c.44-.07 1.125-.527 1.108-1.375-.013-.906-.8-1.57-2.053-1.565-1.31.005-2.043.734-2.074 1.67h1.103c.022-.391.383-.751.936-.751.532 0 .928.33.928.813.004.479-.383.835-.928.835h-.632v.914zm3.606-3.367V11h2.189C12.125 11 13 9.893 13 7.985c0-1.894-.861-2.984-2.685-2.984H8.126zm1.187.967h.844c1.112 0 1.621.686 1.621 2.04 0 1.353-.505 2.02-1.621 2.02h-.844v-4.06z"/>
+                            <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                        </svg>
+                    <h5 class="card-title">Asesoramiento</h5>
+                    <p class="card-text">Nos preocupamos no solo por brindar los productos que está buscando, sino también el asesoramiento que necesita para el diseño y producción de sus uniformes o ropa promocional</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-3 border bg-dark">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-bookmark-check" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                            <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+                        </svg>
+                      <h5 class="card-title">Calidad</h5>
+                      <p class="card-text">Todas nuestras prendas son realizadas con la mejor calidad de materias primas disponibles en el mercado, garantizando así un producto de excelencia.</p>
+                    </div>
+                  </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="p-3 border bg-dark">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                            <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                        </svg>
+                      <h5 class="card-title">Envíos a domicilio</h5>
+                      <p class="card-text">Nuestra producción se adapta a la necesidad de cada cliente, realizando trabajos específicos sin restricción de cantidad, amoldando las técnicas a la demanda planteada.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- FIN CARDS -->
 
-    <body id="hero">
+    <!-- GALERÍA DE FOTOS -->
+        <div class="container mt-4 mb-4 text-center galeria-fotos">
+            <h3>Galería de fotos</h3>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imagenes/chaquetilla-1.jpeg" class="d-block w-100 img-fluid" alt="chaquetilla1">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Chaquetilla 1</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                      <button type="button" class="btn btn-secondary" href="#">Ver más</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/chaquetilla-2.jpeg" class="d-block w-100 img-fluid" alt="chaquetilla2">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Chaquetilla 2</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                      <button type="button" class="btn btn-secondary" href="#">Ver más</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imagenes/chaquetilla-3.jpeg" class="d-block w-100 img-fluid" alt="chaquetilla3">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Chaquetilla 3</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                      <button type="button" class="btn btn-secondary" href="#">Ver más</button>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    <!-- FIN GALERÍA DE FOTOS -->
 
-        <header id="encabezado">
-            <div class="div-encabezado">
-                <img class="logotipo" src="imagenes/logo-clinica.jpg" width="100" alt="logotipo clinica">
-                <h1>Clínica Dr. Pérez Salas</h1>
-                <p>Bienvenidos!</p>
-                <ul class="iconos">
-                    <li class="seleccion">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                        </svg></a>
-                    </li>
-                    <li class="seleccion">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="4" y="4" width="16" height="16" rx="4" />
-                            <circle cx="12" cy="12" r="3" />
-                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                        </svg></a>
-                    </li>
-                    <li class="seleccion">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                        </svg></a>
-                    </li>
-                    <li class="seleccion">
-                        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <rect x="4" y="4" width="16" height="16" rx="2" />
-                            <line x1="8" y1="11" x2="8" y2="16" />
-                            <line x1="8" y1="8" x2="8" y2="8.01" />
-                            <line x1="12" y1="16" x2="12" y2="11" />
-                            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                        </svg></a>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-center text-white" style="width: 100%;">
+        <!-- Grid container -->
+        <div class="container p-4">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+            <!-- Facebook -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+              </svg></a>
+    
+            <!-- Twitter -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg></a>
+    
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+            ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg></a>
+    
+        </section>
+        <!-- Section: Social media -->
+    
+        <!-- Section: Form -->
+        <section class="">
+            <form action="">
+            <!--Grid row-->
+            <div class="row d-flex justify-content-center">
+                <!--Grid column-->
+                <div class="col-auto">
+                <p class="pt-2">
+                    <strong>Contáctanos</strong>
+                </p>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                <!-- Email input -->
+                <div class="form-outline form-dark mb-4">
+                    <input type="email" id="form5Example21" class="form-control"/>
+                    <label class="form-label" for="form5Example21">Correo electrónico</label>
+                </div>
+                </div>
+                <!--Grid column-->
+    
+                <!--Grid column-->
+                <div class="col-auto">
+                <!-- Submit button -->
+                <button type="submit" class="btn btn-outline-light mb-4">
+                    Enviar
+                </button>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+            </form>
+        </section>
+        <!-- Section: Form -->
+    
+        <!-- Section: Text -->
+        <section class="mb-4">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+            repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+            eum harum corrupti dicta, aliquam sequi voluptate quas.
+            </p>
+        </section>
+        <!-- Section: Text -->
+    
+        <!-- Section: Links -->
+        <section class="">
+            <!--Grid row-->
+            <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Home</h5>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Home</a>
                     </li>
                 </ul>
             </div>
-            
-        </header>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Quiénes somos</h5>
 
-        <nav id="barra">
-
-            <ul class="barranav">
-                <li class="selector"><a href="index.html">Home</a></li>
-                <li class="selector"><a href="nosotros.html">Nuestro Equipo</a></li>
-                <li class="selector"><a href="especialidades.html">Especialidades</a></li>
-                <li class="selector"><a href="contacto.html">Contacto</a></li>
-                <li class="selector"><a href="https://clinicamayo.com.ar/">Auspiciante</a></li>
-            </ul>
-
-        </nav>
-
-        <main id="cuerpo">
-            <section class="galeria">
-                <iframe src="https://www.samsociedad.com.ar/noticias" width="80%" height="600" frameborder="0"></iframe>
-                <p>Última noticias médicas para que permanezcas actualizado sobre las distintas patologías.</p>
-            </section>
-
-            <hr>
-
-            <h2 class="subtitulo">Servicios disponibles</h2>
-            <section class="servicios">
-                <article class="serviciochico">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-ambulance" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="7" cy="17" r="2" />
-                        <circle cx="17" cy="17" r="2" />
-                        <path d="M5 17h-2v-11a1 1 0 0 1 1 -1h9v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
-                        <path d="M6 10h4m-2 -2v4" />
-                    </svg>
-                    <h3>Emergencias</h3>
-                    <p>Contamos con servicio de Emergencias Médicas las 24hs del día los 365 días del año para que nunca estes descubierto.</p>
-                </article>
-
-                <article class="serviciochico">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-hospital" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="3" y1="21" x2="21" y2="21" />
-                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16" />
-                        <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
-                        <line x1="10" y1="9" x2="14" y2="9" />
-                        <line x1="12" y1="7" x2="12" y2="11" />
-                    </svg>
-                    <h3>Consultorios Externos</h3>
-                    <p>Contamos con los mejores especialistas al alcance de nuestros pacientes. Solo tenes que sacar tu turno haciendo <a href="#">click aquí</a></p>
-                </article>
-
-                <article class="serviciochico">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-activity" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 12h4l3 8l4 -16l3 8h4" />
-                    </svg>
-                    <h3>Métodos Complementarios</h3>
-                    <p>Contamos con equipos de última generación en el mercado para brindar un servicio de métodos complementarios de primera calidad.</p>
-                    <p><a href="#">Accedé a los resultados de tus análisis bioquímicos</a></p>
-                    <p><a href="#">Visualización de Imagenes On-line</a></p>
-                </article>
-
-                <article class="serviciochico">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bed" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M3 7v11m0 -4h18m0 4v-8a2 2 0 0 0 -2 -2h-8v6" />
-                        <circle cx="7" cy="10" r="1" />
-                    </svg>
-                    <h3>Internación</h3>
-                    <p>Nuestro servicio de internación brinda servicios de excelente calidad en la atención permanente del paciente como de su familiar. Cuenta con supervisión médica y de enfermería las 24hs.</p>
-                    <p><a href="#">Solicitá tu internación aquí.</a></p>
-                </article>
-
-                <article class="serviciochico">
-                    <h2>¿Te ayudamos?</h2>
-                <p>Desde Clínica Dr. Pérez Salas recibirás la atención y comunicación personalizada que tú necesitas.</p>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-skype" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M12 3a9 9 0 0 1 8.603 11.65a4.5 4.5 0 0 1 -5.953 5.953a9 9 0 0 1 -11.253 -11.253a4.5 4.5 0 0 1 5.953 -5.954a8.987 8.987 0 0 1 2.65 -.396z" />
-                    <path d="M8 14.5c.5 2 2.358 2.5 4 2.5c2.905 0 4 -1.187 4 -2.5c0 -1.503 -1.927 -2.5 -4 -2.5s-4 -.997 -4 -2.5c0 -1.313 1.095 -2.5 4 -2.5c1.642 0 3.5 .5 4 2.5" />
-                </svg>
-                <h3>Telemedicina las 24hs</h3>
-                <p><a href="#">Llámanos</a> o completá el formulario con tus datos y no olvides detallar exactamente la cronología de aparición de los síntomas. Aguardá unos minutos que un médico se estará comunicando con Ud.</p>
-                </article>
-
-            </section>
-
-
-            <form class="formulario" action="">
-                    <label for="nombre-completo">Nombre y Apellido: </label>
-                    <input type="text" name="nombre-completo"> <br>
-                    <label for="email">Correo electrónico: </label>
-                    <input type="email" name="correo"> <br>
-                    <label for="telefono">Teléfono: </label>
-                    <input type="number" name="telefono"> <br>
-                    <label for="obras">Obra Social N°: </label>
-                    <input type="text" name="obras"> <br>
-                    <label for="comentarios">Comentarios: </label>
-                    <textarea name="comentarios" cols="50" rows="5"></textarea> <br>
-
-                    <button type="submit" value="Enviar">Enviar consulta</button>
-            </form>
-
-
-            <a class="volver" href="#encabezado">Volver a Home</a>
-        </main>
-
-        <footer id="piepagina">
-            <ul class="iconos">
-                <li class="seleccion">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
-                    </svg></a>
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <a href="#!" class="text-white">Quiénes somos</a>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Diseños</h5>
+    
+                <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="#!" class="text-white">Galería</a>
                 </li>
-                <li class="seleccion">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="4" y="4" width="16" height="16" rx="4" />
-                        <circle cx="12" cy="12" r="3" />
-                        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
-                    </svg></a>
+                <li>
+                    <a href="#!" class="text-white">Creá tu diseño</a>
                 </li>
-                <li class="seleccion">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
-                    </svg></a>
+                <li>
+                    <a href="#!" class="text-white">Diseños personalizados</a>
                 </li>
-                <li class="seleccion">
-                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24" viewBox="0 0 24 24" stroke-width="1" stroke="#597e8d" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <rect x="4" y="4" width="16" height="16" rx="2" />
-                        <line x1="8" y1="11" x2="8" y2="16" />
-                        <line x1="8" y1="8" x2="8" y2="8.01" />
-                        <line x1="12" y1="16" x2="12" y2="11" />
-                        <path d="M16 16v-3a2 2 0 0 0 -4 0" />
-                    </svg></a>
+                </ul>
+            </div>
+            <!--Grid column-->
+    
+            <!--Grid column-->
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Contacto</h5>
+    
+                <ul class="list-unstyled mb-0">
+                <li>
+                    <a href="#!" class="text-white">Contacto</a>
                 </li>
-            </ul>
-            <p>Monteagudo 785 Piso 7 Depto "E", San Miguel de Tucumán.</p>
-            <a href="#">info@clinicadrps.com.ar</a>
-            <a href="#">3815880244</a>
-            <p>Copyright 2022 - Sitio creado por Dr. Gaspar Pérez Salas</p>
-            <p>ES / EN</p>
-        </footer>
-    </body>
+                </ul>
+            </div>
+            <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+    
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright: diseñado por Gaspar Pérez Salas
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- FIN FOOTER -->
+
+    <script src="bootstrap_local/js/bootstrap.js"></script>
+</body>
 </html>
