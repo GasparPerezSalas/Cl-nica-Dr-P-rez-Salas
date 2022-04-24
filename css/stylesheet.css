@@ -65,6 +65,30 @@ body, html {
 .imagen-quienes-somos {
     max-width: 50%;
 }
+.contenedor-contacto {
+    width: 90%;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin: 20px;
+}
+.contenedor-contacto h3 {
+    text-align: center;
+}
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin: 50px 0 30px 0;
+}
+.formulario-contacto label {
+    font-weight: bold;
+}
+.formulario-contacto .btn {
+    margin-bottom: 30px;
+}
 @media (min-width: 769px) {
     .carousel-inner img {
         width: 100%;
@@ -119,6 +143,10 @@ body, html {
     }
     .imagen-quienes-somos {
       width: 25%;
+    }
+    .formulario-contacto .btn {
+        width: 150px;
+        height: 50px;
     }
 }
 @media (min-width: 993px) {
