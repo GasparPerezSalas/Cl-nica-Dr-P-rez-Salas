@@ -89,6 +89,35 @@ body, html {
 .formulario-contacto .btn {
     margin-bottom: 30px;
 }
+.red-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url(https://www.es.logicalis.com/globalassets/group/solutions-and-services/hero-images/adobestock_100000042.jpg);
+}
+.red-contacto h3 {
+    width: 90%;
+    color: white;
+}
+.red-contacto p {
+    width: 90%;
+    color: white;
+}
+.mas-contacto {
+    width: 90%;
+    margin: 40px 0;
+}
+.padre-contacto {
+    display: flex;
+    flex-direction: column;
+}
+.diseño-perso {
+    text-align: center;
+    margin: 50px 0;
+}
 @media (min-width: 769px) {
     .carousel-inner img {
         width: 100%;
@@ -147,6 +176,32 @@ body, html {
     .formulario-contacto .btn {
         width: 150px;
         height: 50px;
+    }
+    .red-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .red-contacto h3 {
+        margin-left: 25px;
+    }
+    .red-contacto p {
+        width: 50%;
+        color: white;
+        margin-left: 25px;
+    }
+    .mas-contacto {
+        width: 100%;
+        height: 30vh;
+        margin: 40px 0;
+    }
+    .padre-contacto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (min-width: 993px) {
