@@ -11123,74 +11123,133 @@ body, html {
   overflow-x: hidden;
 }
 
+/*GENERALES*/
+.envio-gratis {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.envio-gratis h1, .envio-gratis .h1 {
+  margin: 0 0 0 10px;
+  font-weight: lighter;
+}
+
+.transferencia {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.transferencia h2, .transferencia .h2 {
+  margin: 0 0 0 10px;
+  font-weight: lighter;
+}
+
+/* -- INDEX -- */
 .carousel-inner img {
-  width: 100%;
-  height: 40vh;
-}
-
-.carta {
-  margin-bottom: 40px;
-}
-.carta .empresa-lider {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-.carta .empresa-lider svg {
-  width: 20vw;
-  height: 20vh;
-}
-.carta .empresa-lider .empresa-lider-texto {
-  width: 90%;
-}
-
-.destacado {
-  margin-top: 100px;
-  margin-bottom: 150px;
-  width: 80%;
-}
-.destacado .card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.destacado .card-body svg {
-  margin-bottom: 15px;
-}
-
-.galeria-fotos h3, .galeria-fotos .h3 {
-  margin-bottom: 30px;
-  border: 3px solid grey;
-  border-radius: 30px;
-}
-.galeria-fotos .carousel {
   width: 100%;
   height: 40%;
 }
 
-.logos-quienes-somos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 100px 0;
+.card-empresa-lider {
+  margin: 80px 10px 30px 10px;
 }
-.logos-quienes-somos h3, .logos-quienes-somos .h3 {
-  margin-bottom: 50px;
+.card-empresa-lider img {
+  opacity: 0.7;
 }
-.logos-quienes-somos .imagenes-quienes-somos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.card-empresa-lider a {
+  text-decoration: none;
+  color: white;
 }
-.logos-quienes-somos .imagenes-quienes-somos .imagen-quienes-somos {
-  max-width: 50%;
+.card-empresa-lider a:hover {
+  opacity: 0.8;
 }
 
+.servicios {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 80px 30px 30px 30px;
+}
+.servicios .texto-servicios, .servicios .ver-mas a, .servicios svg {
+  font-weight: lighter;
+  color: black;
+}
+.servicios .ver-mas {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.servicios .ver-mas a {
+  text-decoration: none;
+  margin: 0 10px 0 0;
+}
+.servicios .ver-mas a a:hover {
+  opacity: 0.5;
+}
+
+.servicios-card {
+  height: 25%;
+}
+.servicios-card .card-servicio {
+  height: 100%;
+  opacity: 0.7;
+}
+.servicios-card .card-servicio .card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.galeria-fotos {
+  height: 100%;
+  opacity: 0.7;
+}
+
+/* -- QUIENES SOMOS -- */
+.nosotros-col {
+  width: 90%;
+}
+.nosotros-col .nosotros-fila {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.nosotros-col .nosotros-fila h6, .nosotros-col .nosotros-fila .h6 {
+  font-size: larger;
+  margin-bottom: 30px;
+}
+.nosotros-col .nosotros-fila p {
+  font-size: larger;
+  font-weight: lighter;
+}
+.nosotros-col h6, .nosotros-col .h6 {
+  font-size: larger;
+}
+
+.logos-quienes-somos {
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.logos-quienes-somos .quienes-somos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.logos-quienes-somos img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* -- CONTACTO -- */
 .red-contacto {
   display: flex;
   flex-direction: column;
@@ -11209,79 +11268,49 @@ body, html {
   color: white;
 }
 
-.mas-contacto {
+.container-contacto {
   width: 90%;
-  margin: 40px 0;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
-.mas-contacto .padre-contacto {
-  display: flex;
-  flex-direction: column;
+.container-contacto .texto-contacto h6, .container-contacto .texto-contacto .h6 {
+  font-size: larger;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.container-contacto .texto-contacto p {
+  font-size: larger;
+  font-weight: lighter;
+}
+.container-contacto .contacto {
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-.diseño-perso {
-  text-align: center;
-  margin: 50px 0;
-}
-
+/* -- GALERIA DE FOTOS -- */
+/* -- TABLETS -- */
 @media (min-width: 769px) {
+  /* -- INDEX -- */
   .carousel-inner img {
     width: 100%;
     height: 80vh;
   }
 
-  .empresa-lider {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  .card-empresa-lider {
+    margin: 80px 50px 30px 50px;
   }
-  .empresa-lider .empresa-lider-logo {
-    margin-right: 30px;
+  .card-empresa-lider img {
+    opacity: 0.7;
   }
-  .empresa-lider .empresa-lider-texto {
-    padding: 10px;
+  .card-empresa-lider a {
+    text-decoration: none;
+    color: white;
   }
-
-  .destacado {
-    width: 100%;
-    margin-top: 100px;
-    margin-bottom: 150px;
-  }
-  .destacado .cartitas {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-  .destacado .cartitas .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .destacado .cartitas .card-body svg {
-    margin-bottom: 15px;
+  .card-empresa-lider a:hover {
+    opacity: 0.8;
   }
 
-  .logos-quienes-somos {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 100px 0;
-  }
-  .logos-quienes-somos .imagenes-quienes-somos {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-  }
-  .logos-quienes-somos .imagenes-quienes-somos .imagen-quienes-somos {
-    width: 25%;
-  }
-
+  /* -- CONTACTO -- */
   .red-contacto {
     display: flex;
     flex-direction: column;
@@ -11297,73 +11326,67 @@ body, html {
     color: white;
     margin-left: 25px;
   }
-
-  .mas-contacto {
-    width: 100%;
-    height: 30vh;
-    margin: 40px 0;
-  }
-  .mas-contacto .padre-contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
 }
+/* -- DESKTOP -- */
 @media (min-width: 993px) {
+  /* -- INDEX -- */
   .carousel-inner img {
     width: 100%;
     height: 100vh;
   }
 
-  .empresa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
-  .empresa .empresa-lider {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 60vw;
-    margin-top: 100px;
-  }
-  .empresa .empresa-lider .empresa-lider-logo {
-    width: 40vw;
-    height: 40vh;
-  }
-  .empresa .empresa-lider .empresa-lider-texto {
-    text-align: center;
+  .card-empresa-lider {
+    margin: 100px 130px 50px 130px;
   }
 
-  .destacado {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .servicios-cont {
     width: 100%;
-    margin-top: 100px;
-    margin-bottom: 150px;
+    height: 649px;
   }
-  .destacado .cartitas {
-    width: 80%;
-    margin: 0;
-    padding: 0;
+  .servicios-cont .filas {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 100px;
   }
-  .destacado .cartitas .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .destacado .cartitas .card-body svg {
-    margin-bottom: 15px;
+  .servicios-cont .filas .servicios-card {
+    width: 50%;
+    height: 45%;
   }
 
-  .galeria-fotos h3, .galeria-fotos .h3 {
+  .primer-galeria-fotos {
+    width: 70%;
+  }
+  .primer-galeria-fotos .galeria-fotos {
+    width: 75%;
+  }
+  .primer-galeria-fotos .galeria-fotos h3, .primer-galeria-fotos .galeria-fotos .h3 {
     margin-top: 50px;
     margin-bottom: 80px;
+  }
+
+  /* -- CONTACTO -- */
+  .container-contacto {
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+  .container-contacto .fila-contacto {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .container-contacto .fila-contacto .texto-contacto h6, .container-contacto .fila-contacto .texto-contacto .h6 {
+    font-size: larger;
+  }
+  .container-contacto .fila-contacto .texto-contacto p {
+    font-size: larger;
+    font-weight: lighter;
+    margin-top: 40px;
+  }
+  .container-contacto .fila-contacto .contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 }
 
